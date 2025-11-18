@@ -1,87 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <meta charset="utf-8">
+    <title>Awah Dodem - Personal Portfolio</title>
+    <style>
+        /* Basic styling for clarity and readability */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, section, article, footer {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 1000px;
+        }
+
+        header {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #0077cc;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tweets.html">Tweets</a></li>
-         </ul>
-</header>
+    <!-- Header -->
+    <header>
+        <h1>Awah Dodem</h1>
+        <p>Passionate Web Developer & Lifelong Learner</p>
+    </header>
 
-<main>
-    <article>
-        <h1>Welcome to My First Webpage</h1>
-        <p>This is a paragraph of text introducing my webpage.</p>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I am Awah Dodem, a dedicated web developer with a passion for creating beautiful, responsive, and user-friendly websites. I enjoy learning new technologies and applying them to real-world projects.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            <a href="https://github.com/solomon1346/portfolio" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+            <h3>Weather App</h3>
+            <p>A web application that provides real-time weather information using OpenWeatherMap API.</p>
+            <a href="https://github.com/solomon1346/weather-app" target="_blank">View Project</a>
+        </article>
+
+        <article class="project">
+            <h3>Todo List App</h3>
+            <p>An interactive task management app built using JavaScript, HTML, and CSS.</p>
+            <a href="https://github.com/solomon1346/todo-app" target="_blank">View Project</a>
+        </article>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
         <h2>About Me</h2>
-        <p>Here's some info about me...</p>
+        <p>I am a web developer with experience in front-end technologies such as HTML, CSS, JavaScript, and React. I am passionate about creating engaging user experiences and constantly improving my skills.</p>
+        <p>Skills:</p>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React.js & Redux</li>
+            <li>Responsive Web Design</li>
+            <li>Git & GitHub</li>
+        </ul>
+        <p>Hobbies:</p>
+        <ul>
+            <li>Coding Challenges</li>
+            <li>Reading Tech Blogs</li>
+            <li>Playing Chess</li>
+        </ul>
+    </section>
 
-        <h3>My Goals</h3>
-        <p>My goal is to become comfortable writing HTML pages.</p>
- <h3>Clickable Image</h3>
-        <p>Featured Project:</p>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:awahdodem1@gmail.com">awahdodem1@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/solomon1346" target="_blank">My GitHub</a></p>
+    </section>
 
-        <a href="https://example.com" target="_blank">
-            <img src="https://i.ibb.co/tDZZT8/ALX-Logo-07.png" 
-                 alt="ALX Logo" width="500">
-        </a>
-
-        <p>Click the image to visit Example.com!</p>
-
-        <!-- ⭐⭐⭐ TABLE ADDED BELOW (before </article>) ⭐⭐⭐ -->
-           <h3>Learners Table</h3>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Country</th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>25</td>
-                     </tr>
-
-                <tr>
-                    <td>Emily</td>
-                    <td>28</td>
-                    <td>Canada</td>
-                </tr>
-
-                <tr>
-                    <td>Michael</td>
-                    <td>32</td>
-                    <td>Australia</td>
-                </tr>
- <tr>
-                    <td>Sophia</td>
-                    <td>21</td>
-                    <td>UK</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- END OF TABLE -->
-    </article>
-
-    <aside>
-        <p>placeholder to add comment thread later</p>
-    </aside>
-    </main>
-
-<footer>
-    <p>Made by Awah Dodem - <a href="https://yourlink.com" target="_blank">here</a></p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Awah Dodem</p>
+    </footer>
 
 </body>
 </html>
-   
